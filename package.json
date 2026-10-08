@@ -20,5 +20,8 @@
   "homepage": "https://github.com/allesoares/hub-de-leitura-teste-ui#readme",
   "dependencies": {
     "cypress": "^15.18.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.6.0"
   }
 }
