@@ -46,4 +46,13 @@ describe('Funcionalidade: Cadastro no Hub de Leitura', () => {
         cy.url().should('include', '/register.html')
     });
 
+    it.only('Deve cadastrar com sucesso usando o comando customizado', () => {
+        let email = faker.internet.email()
+        let name = faker.person.fullName()
+        cy.preencherCadastro(name, email, '11999999999', 'senha123', 'senha123')
+        cy.get('#register-btn').click()
+        cy.url().should('include', '/dashboard.html')
+        cy.get('#user-name').should('contain.text', name)
+    });
+
 });

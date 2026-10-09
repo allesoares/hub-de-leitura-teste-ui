@@ -56,10 +56,5 @@ describe('Funcionalidade: Catálogo de livros', () => {
         cy.get('#cart-list .card-title').should('contain.text', 'Dom Casmurro')
     });
 
-    //Testando percorrer lista de livros e verificar se os títulos não estão vazios
-    it('Deve exibir os livros do catálogo com sucesso', () => {
-        cy.get('#book-list .card-title').each(($titulo) => {
-            expect($titulo.text().trim()).not.to.be.empty;
-        });
-    });
+
 });

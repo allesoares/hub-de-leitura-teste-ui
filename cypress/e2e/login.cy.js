@@ -1,3 +1,5 @@
+import user from '../fixtures/usuario.json'
+
 describe('Funcionalidade: Login no Hub de Leitura', () => {
     beforeEach(() => {
         //Pagina de login
@@ -13,8 +15,13 @@ describe('Funcionalidade: Login no Hub de Leitura', () => {
         cy.url().should('include', 'dashboard');
     });
 
-    it('Deve fazer login com sucesso usando o comando personalizado', () => {
-        cy.login('usuario@teste.com', 'user123');
+    it('Deve fazer login com sucesso com conta Admin - usando o comando customizado', () => {
+        cy.login('admin@biblioteca.com', 'admin123');
     });
+
+    it('Deve fazer login com sucesso usando massa de dados e o comando customizado', () => {
+        cy.login(user.email, user.senha);
+    });
+
 
 });
