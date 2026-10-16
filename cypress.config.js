@@ -1,4 +1,6 @@
 module.exports = {
+  projectId: "6it47k",
+  video: true,
   allowCypressEnv: false,
 
   e2e: {

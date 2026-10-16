@@ -6,6 +6,10 @@ describe('Funcionalidade: Cadastro no Hub de Leitura', () => {
         cadastroPage.visitarPaginaCadastro()
     });
 
+    afterEach(() => {
+        cy.screenshot()
+    });
+
     it('Deve preencher o formulário de cadastro com sucesso, usando JS', () => {
         let timestamp = Date.now()
         let email = `alexandre+${timestamp}@teste.com`
@@ -66,10 +70,11 @@ describe('Funcionalidade: Cadastro no Hub de Leitura', () => {
         cy.get('#user-name').should('contain.text', name)
     });
 
-    it.only('Não deve cadastrar quando o nome não for preenchido', () => {
+    it('Não deve cadastrar quando o nome não for preenchido', () => {
         let email = faker.internet.email()
         cadastroPage.preencherCadastro('', email, '11999999999', 'senha123', 'senha123')
         cadastroPage.botaoCadastrar().click()
+        cadastroPage.campoNome().should('have.class', 'is-invalid')
         cy.contains('Nome deve ter pelo menos 2 caracteres').should('be.visible')
         cy.url().should('include', '/register.html')
     });
