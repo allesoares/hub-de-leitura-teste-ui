@@ -141,3 +141,15 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Cypress: evidências geradas durante os testes
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+
+# Allure: resultados e relatório HTML
+allure-results/
+allure-report/
+
+# Aplicação de apoio usada pelo CI e pela validação local
+.ci/

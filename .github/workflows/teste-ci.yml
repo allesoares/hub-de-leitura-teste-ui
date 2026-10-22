@@ -1,0 +1,68 @@
+name: Teste CI - Cypress e Allure
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Baixar projeto de testes
+        uses: actions/checkout@v6
+
+      - name: Baixar aplicação Hub de Leitura
+        uses: actions/checkout@v6
+        with:
+          repository: EBAC-QE/hub-de-leitura-integrado
+          path: .ci/hub-de-leitura-integrado
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Configurar Java para Allure
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Instalar dependências dos testes
+        run: npm ci
+
+      - name: Instalar dependências da aplicação
+        working-directory: .ci/hub-de-leitura-integrado
+        run: npm ci
+
+      - name: Preparar banco de testes
+        working-directory: .ci/hub-de-leitura-integrado
+        run: |
+          mkdir -p database
+          rm -f database/biblioteca.db
+          npm run db
+
+      - name: Iniciar aplicação e executar Cypress
+        uses: cypress-io/github-action@v7
+        with:
+          install: false
+          start: npm start --prefix .ci/hub-de-leitura-integrado
+          wait-on: 'http://localhost:3000/api/health'
+          command: npm test
+        env:
+          NODE_ENV: production
+
+      - name: Gerar relatório Allure
+        run: npm run report:generate
+
+      - name: Publicar relatório no GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report

@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run --browser chrome",
-    "cy:report" : "npx cypress run --browser chrome --record --key 8d4e5323-e3a3-4904-a13a-8c7db88e8b53"
+    "cy:report": "npx cypress run --browser chrome --record --key 8d4e5323-e3a3-4904-a13a-8c7db88e8b53",
+    "report:generate": "allure generate allure-results --clean --output allure-report",
+    "report:open": "allure open allure-report"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,8 @@
     "cypress": "^15.18.1"
   },
   "devDependencies": {
-    "@faker-js/faker": "^10.6.0"
+    "@faker-js/faker": "^10.6.0",
+    "allure-commandline": "^2.46.1",
+    "allure-cypress": "^3.14.0"
   }
 }

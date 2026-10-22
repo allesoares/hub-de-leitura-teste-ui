@@ -11,7 +11,8 @@ Os testes verificam funcionalidades do site Hub de Leitura (projeto `hub-de-leit
 
 ## Pré-requisitos
 
-- Node.js e npm instalados, em versões compatíveis com as dependências do projeto.
+- Node.js 22.13 ou superior da linha 22 e npm instalados.
+- Java 17 ou superior no `PATH` para gerar e abrir o relatório Allure 2.
 - Git
 - Aplicação Hub de Leitura configurada e disponível em `http://localhost:3000/`.
 
@@ -47,6 +48,21 @@ Para executar os testes no Chrome e registrar os resultados no Cypress Cloud, us
 ```powershell
 npm run cy:report
 ```
+
+## Relatório Allure
+
+Instalar dependencias : npm ci
+
+```powershell
+npm test
+npm run report:generate
+npm run report:open
+```
+
+## GitHub Actions
+
+workflow `.github/workflows/teste-ci.yml` 
+
 
 ## Cenários implementados
 
