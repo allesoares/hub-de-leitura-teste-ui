@@ -46,6 +46,7 @@ npm test
 Para executar os testes no Chrome e registrar os resultados no Cypress Cloud, use o script `cy:report`:
 
 ```powershell
+$env:CYPRESS_RECORD_KEY = "chave-gerada-no-cypress-cloud-pro-projeto"
 npm run cy:report
 ```
 
@@ -61,7 +62,12 @@ npm run report:open
 
 ## GitHub Actions
 
-workflow `.github/workflows/teste-ci.yml` 
+Workflow `.github/workflows/teste-ci.yml`. A geração do Allure usa `if: always()` para executar mesmo quando os testes falham. 
+O CI executa `npm test`, sem gravação no Cypress Cloud. Para habilitar a gravação, cadastre a nova chave como secret `CYPRESS_RECORD_KEY` em **Settings > Secrets and variables > Actions** do repositório, altere o `command` para `npm run cy:report` e adicione ao `env` da etapa do Cypress:
+
+```yaml
+CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+```
 
 
 ## Cenários implementados
