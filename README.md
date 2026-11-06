@@ -8,21 +8,6 @@ Pré-requisitos: Docker Desktop em execução com containers Linux e Git.
 
 O Compose inicia dois serviços: `app` (Hub de Leitura com SQLite) e `testes` (Cypress). Os testes aguardam a aplicação ficar pronta e acessam `http://app:3000` pela rede dos containers.
 
-Para construir as imagens e executar os testes:
-
-```powershell
-docker compose up --build --abort-on-container-exit --exit-code-from testes
-```
-
-Os relatórios, screenshots e vídeos ficam em `artifacts/compose/` e são atualizados a cada execução.
-
-Para capturar a evidência no Docker Desktop, abra o grupo `hub-de-leitura-teste-ui`, selecione o container `testes` e acesse **Logs**. O resumo final do Cypress mostra o resultado dos testes. Os logs de `app` mostram a inicialização da aplicação.
-
-Depois de capturar a evidência, remova os containers para a próxima execução começar com um banco novo:
-
-```powershell
-docker compose down
-```
 
 ## Bônus - Docker Hub
 
