@@ -1,0 +1,31 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://127.0.0.1:3000/api/health').then(async r => { const body = await r.json(); if (!r.ok || body.services.database !== 'connected') process.exit(1); }).catch(() => process.exit(1))"
+      interval: 5s
+      timeout: 3s
+      retries: 12
+      start_period: 10s
+
+  testes:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      app:
+        condition: service_healthy
+    environment:
+      CYPRESS_BASE_URL: http://app:3000
+    shm_size: 1gb
+    volumes:
+      - ./artifacts/compose/allure-results:/tests/allure-results
+      - ./artifacts/compose/allure-report:/tests/allure-report
+      - ./artifacts/compose/screenshots:/tests/cypress/screenshots
+      - ./artifacts/compose/videos:/tests/cypress/videos
