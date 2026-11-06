@@ -1,0 +1,16 @@
+.git
+.github
+.ci
+**/node_modules
+allure-results
+allure-report
+artifacts
+evidencias
+execucao-docker.txt
+videos-docker
+cypress/screenshots
+cypress/videos
+cypress/downloads
+*.log
+.env
+.env.*

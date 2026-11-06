@@ -1,0 +1,318 @@
+2026-11-06 18:49:04.211 | 
+2026-11-06 18:49:04.211 | > hub-de-leitura-teste-ui@1.0.0 test:docker
+2026-11-06 18:49:04.211 | > start-server-and-test "npm start --prefix /opt/hub-de-leitura" http://127.0.0.1:3000/api/health test
+2026-11-06 18:49:04.211 | 
+2026-11-06 18:49:04.625 | 1: starting server using command "npm start --prefix /opt/hub-de-leitura"
+2026-11-06 18:49:04.627 | and when url "[ 'http://127.0.0.1:3000/api/health' ]" is responding with HTTP status code 200
+2026-11-06 18:49:04.627 | running tests using command "npm run test"
+2026-11-06 18:49:04.627 | 
+2026-11-06 18:49:04.731 | 
+2026-11-06 18:49:04.731 | > hub-de-leitura@1.0.0 start
+2026-11-06 18:49:04.731 | > node src/server.js
+2026-11-06 18:49:04.731 | 
+2026-11-06 18:49:04.980 | 🔍 Procurando banco em: /opt/hub-de-leitura/database/biblioteca.db
+2026-11-06 18:49:05.043 | ✅ Conectado ao banco SQLite existente
+2026-11-06 18:49:05.044 | 🔗 Foreign keys habilitadas
+2026-11-06 18:49:05.044 | 📋 Tabelas encontradas: Users, sqlite_sequence, Books, Contacts, Reservations, LoanHistory, Wishlist, Basket, BookReviews
+2026-11-06 18:49:05.045 | 📊 Dados já existem no banco
+2026-11-06 18:49:05.047 | 
+2026-11-06 18:49:05.047 | 🚀 ===============================================
+2026-11-06 18:49:05.047 | 📚 HUB DE LEITURA - Sistema de Biblioteca QA
+2026-11-06 18:49:05.048 | 🚀 ===============================================
+2026-11-06 18:49:05.048 | 
+2026-11-06 18:49:05.048 | 🌐 Servidor rodando em: http://localhost:3000
+2026-11-06 18:49:05.048 | 📖 Documentação API: http://localhost:3000/api-docs
+2026-11-06 18:49:05.048 | 👤 Login: http://localhost:3000/login.html
+2026-11-06 18:49:05.048 | 🏠 Dashboard: http://localhost:3000/dashboard.html
+2026-11-06 18:49:05.048 | 🛠️  Admin: http://localhost:3000/admin-dashboard.html
+2026-11-06 18:49:05.048 | 
+2026-11-06 18:49:05.048 | 🔑 Credenciais de Teste (Banco Existente):
+2026-11-06 18:49:05.048 |    👑 Admin: admin@biblioteca.com / admin123
+2026-11-06 18:49:05.048 |    👤 User:  usuario@teste.com / user123
+2026-11-06 18:49:05.048 | 
+2026-11-06 18:49:05.048 | 📋 Endpoints Principais:
+2026-11-06 18:49:05.048 |    🔐 POST /api/login        - Autenticação
+2026-11-06 18:49:05.048 |    📚 GET  /api/books        - Listar livros
+2026-11-06 18:49:05.048 |    👥 GET  /api/users        - Listar usuários (Admin)
+2026-11-06 18:49:05.048 |    📝 GET  /api/reservations - Minhas reservas
+2026-11-06 18:49:05.048 |    🛒 GET  /api/basket/:id   - Meu carrinho
+2026-11-06 18:49:05.048 |    🛠️  GET  /api/admin/*     - Rotas administrativas
+2026-11-06 18:49:05.048 |    ❤️  GET  /api/health      - Status do sistema
+2026-11-06 18:49:05.048 | 
+2026-11-06 18:49:05.048 | ✨ Recursos Disponíveis:
+2026-11-06 18:49:05.048 |    📖 Sistema completo de biblioteca
+2026-11-06 18:49:05.048 |    🔐 Autenticação JWT com roles
+2026-11-06 18:49:05.048 |    📝 Gestão de reservas e carrinho
+2026-11-06 18:49:05.048 |    🛠️  Painel administrativo completo
+2026-11-06 18:49:05.048 |    📚 Documentação Swagger interativa
+2026-11-06 18:49:05.048 |    🧪 Dados de teste pré-configurados
+2026-11-06 18:49:05.048 | 
+2026-11-06 18:49:05.048 | 🎯 Perfeito para:
+2026-11-06 18:49:05.048 |    ✅ Aprendizado de QA Manual
+2026-11-06 18:49:05.048 |    ✅ Automação de testes de API
+2026-11-06 18:49:05.048 |    ✅ Testes de integração
+2026-11-06 18:49:05.048 |    ✅ Práticas de teste E2E
+2026-11-06 18:49:05.048 | 
+2026-11-06 18:49:05.048 | 🚀 ===============================================
+2026-11-06 18:49:05.048 | ✨ Sistema pronto para uso! Bons testes! 🧪
+2026-11-06 18:49:05.048 | 🚀 ===============================================
+2026-11-06 18:49:05.048 | 
+2026-11-06 18:49:05.049 | 👥 Usuários encontrados:
+2026-11-06 18:49:05.049 |    👑 Bibliotecário Admin (admin@biblioteca.com)
+2026-11-06 18:49:05.049 |    👤 Usuário Padrão (usuario@teste.com)
+2026-11-06 18:49:05.050 | 📚 Livros no acervo: 23
+2026-11-06 18:49:05.051 | 👥 Usuários disponíveis:
+2026-11-06 18:49:05.051 |    👑 Admin: admin@biblioteca.com
+2026-11-06 18:49:05.051 |    👤 User: usuario@teste.com
+2026-11-06 18:49:06.756 | 
+2026-11-06 18:49:06.756 | > hub-de-leitura-teste-ui@1.0.0 test
+2026-11-06 18:49:06.756 | > npx cypress run --browser chrome
+2026-11-06 18:49:06.756 | 
+2026-11-06 18:49:07.308 | [STARTED] [21:49:07]  Verifying Cypress can run /root/.cache/Cypress/15.18.1/Cypress
+2026-11-06 18:49:08.153 | [COMPLETED] [21:49:08]  Verified Cypress!       /root/.cache/Cypress/15.18.1/Cypress
+2026-11-06 18:49:09.946 | 
+2026-11-06 18:49:09.960 | ====================================================================================================
+2026-11-06 18:49:09.960 | 
+2026-11-06 18:49:09.961 |   (Run Starting)
+2026-11-06 18:49:09.961 | 
+2026-11-06 18:49:09.968 |   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+2026-11-06 18:49:09.968 |   │ Cypress:        15.18.1                                                                        │
+2026-11-06 18:49:09.968 |   │ Browser:        Chrome 139 (headless)                                                          │
+2026-11-06 18:49:09.968 |   │ Node Version:   v22.19.0 (/usr/local/bin/node)                                                 │
+2026-11-06 18:49:09.968 |   │ Specs:          5 found (cadastro.cy.js, catalogo-busca.cy.js, catalogo.cy.js, contato.cy.js,  │
+2026-11-06 18:49:09.968 |   │                 login.cy.js)                                                                   │
+2026-11-06 18:49:09.968 |   │ Searched:       cypress/e2e/**/*.cy.{js,jsx,ts,tsx}                                            │
+2026-11-06 18:49:09.968 |   └────────────────────────────────────────────────────────────────────────────────────────────────┘
+2026-11-06 18:49:09.968 | 
+2026-11-06 18:49:09.975 | 
+2026-11-06 18:49:09.976 | ────────────────────────────────────────────────────────────────────────────────────────────────────
+2026-11-06 18:49:09.976 |                                                                                                     
+2026-11-06 18:49:09.976 |   Running:  cadastro.cy.js                                                                  (1 of 5)
+2026-11-06 18:49:14.837 | 
+2026-11-06 18:49:14.838 | 
+2026-11-06 18:49:14.840 |   Funcionalidade: Cadastro no Hub de Leitura
+2026-11-06 18:49:21.989 |     ✓ Deve preencher o formulário de cadastro com sucesso, usando JS (5622ms)
+2026-11-06 18:49:26.852 |     ✓ Deve preencher o formulário de cadastro com sucesso, usando Faker (4048ms)
+2026-11-06 18:49:29.381 |     ✓ Não deve cadastrar quando as senhas forem diferentes (1589ms)
+2026-11-06 18:49:34.541 |     ✓ Deve cadastrar com sucesso usando o comando customizado (3994ms)
+2026-11-06 18:49:39.451 |     ✓ Deve cadastrar com sucesso usando cadastro-page (3880ms)
+2026-11-06 18:49:41.842 |     ✓ Não deve cadastrar quando o nome não for preenchido (1434ms)
+2026-11-06 18:49:41.842 | 
+2026-11-06 18:49:41.856 | 
+2026-11-06 18:49:41.856 |   6 passing (27s)
+2026-11-06 18:49:41.856 | 
+2026-11-06 18:49:42.959 | 
+2026-11-06 18:49:42.959 |   (Results)
+2026-11-06 18:49:42.959 | 
+2026-11-06 18:49:42.961 |   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+2026-11-06 18:49:42.961 |   │ Tests:        6                                                                                │
+2026-11-06 18:49:42.961 |   │ Passing:      6                                                                                │
+2026-11-06 18:49:42.961 |   │ Failing:      0                                                                                │
+2026-11-06 18:49:42.961 |   │ Pending:      0                                                                                │
+2026-11-06 18:49:42.961 |   │ Skipped:      0                                                                                │
+2026-11-06 18:49:42.961 |   │ Screenshots:  6                                                                                │
+2026-11-06 18:49:42.961 |   │ Video:        true                                                                             │
+2026-11-06 18:49:42.961 |   │ Duration:     27 seconds                                                                       │
+2026-11-06 18:49:42.961 |   │ Spec Ran:     cadastro.cy.js                                                                   │
+2026-11-06 18:49:42.961 |   └────────────────────────────────────────────────────────────────────────────────────────────────┘
+2026-11-06 18:49:42.961 | 
+2026-11-06 18:49:42.961 | 
+2026-11-06 18:49:42.961 |   (Screenshots)
+2026-11-06 18:49:42.961 | 
+2026-11-06 18:49:42.963 |   -  /tests/cypress/screenshots/cadastro.cy.js/Funcionalidade Cadastro no Hub de Leit    (1000x1759)
+2026-11-06 18:49:42.963 |      ura -- Deve preencher o formulário de cadastro com sucesso, usando JS -- after e               
+2026-11-06 18:49:42.963 |      ach hook.png                                                                                   
+2026-11-06 18:49:42.963 |   -  /tests/cypress/screenshots/cadastro.cy.js/Funcionalidade Cadastro no Hub de Leit    (1000x1266)
+2026-11-06 18:49:42.963 |      ura -- Deve preencher o formulário de cadastro com sucesso, usando Faker -- afte               
+2026-11-06 18:49:42.963 |      r each hook.png                                                                                
+2026-11-06 18:49:42.963 |   -  /tests/cypress/screenshots/cadastro.cy.js/Funcionalidade Cadastro no Hub de Leit    (1000x2159)
+2026-11-06 18:49:42.963 |      ura -- Não deve cadastrar quando as senhas forem diferentes -- after each hook.p               
+2026-11-06 18:49:42.963 |      ng                                                                                             
+2026-11-06 18:49:42.963 |   -  /tests/cypress/screenshots/cadastro.cy.js/Funcionalidade Cadastro no Hub de Leit    (1000x1759)
+2026-11-06 18:49:42.963 |      ura -- Deve cadastrar com sucesso usando o comando customizado -- after each hoo               
+2026-11-06 18:49:42.963 |      k.png                                                                                          
+2026-11-06 18:49:42.963 |   -  /tests/cypress/screenshots/cadastro.cy.js/Funcionalidade Cadastro no Hub de Leit    (1000x1759)
+2026-11-06 18:49:42.963 |      ura -- Deve cadastrar com sucesso usando cadastro-page -- after each hook.png                  
+2026-11-06 18:49:42.963 |   -  /tests/cypress/screenshots/cadastro.cy.js/Funcionalidade Cadastro no Hub de Leit    (1000x2159)
+2026-11-06 18:49:42.963 |      ura -- Não deve cadastrar quando o nome não for preenchido -- after each hook.pn               
+2026-11-06 18:49:42.963 |      g                                                                                              
+2026-11-06 18:49:42.963 | 
+2026-11-06 18:49:43.075 | 
+2026-11-06 18:49:43.075 |   (Video)
+2026-11-06 18:49:43.075 | 
+2026-11-06 18:49:43.075 |   -  Video output: /tests/cypress/videos/cadastro.cy.js.mp4
+2026-11-06 18:49:43.075 | 
+2026-11-06 18:49:43.075 | 
+2026-11-06 18:49:43.077 | ────────────────────────────────────────────────────────────────────────────────────────────────────
+2026-11-06 18:49:43.077 |                                                                                                     
+2026-11-06 18:49:43.077 |   Running:  catalogo-busca.cy.js                                                            (2 of 5)
+2026-11-06 18:49:48.411 | 
+2026-11-06 18:49:48.411 | 
+2026-11-06 18:49:48.411 |   Funcionalidade: Busca no catálogo do Hub de Leitura
+2026-11-06 18:49:49.117 |     ✓ Deve exibir os livros do catálogo com sucesso (682ms)
+2026-11-06 18:49:49.569 |     ✓ Deve buscar o livro 1984 com sucesso (396ms)
+2026-11-06 18:49:50.162 |     ✓ Deve buscar um livro usando o arquivo de massa de dados (521ms)
+2026-11-06 18:49:50.865 |     ✓ Deve buscar um livro usando o fixture (619ms)
+2026-11-06 18:49:53.913 |     ✓ Deve buscar e validar todos os livros usando fixture (2805ms)
+2026-11-06 18:49:56.904 |     ✓ Deve buscar e validar todos os livros usando wrap (2865ms)
+2026-11-06 18:49:56.905 | 
+2026-11-06 18:49:56.929 | 
+2026-11-06 18:49:56.929 |   6 passing (9s)
+2026-11-06 18:49:56.929 | 
+2026-11-06 18:49:57.956 | 
+2026-11-06 18:49:57.956 |   (Results)
+2026-11-06 18:49:57.957 | 
+2026-11-06 18:49:57.958 |   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+2026-11-06 18:49:57.958 |   │ Tests:        6                                                                                │
+2026-11-06 18:49:57.958 |   │ Passing:      6                                                                                │
+2026-11-06 18:49:57.958 |   │ Failing:      0                                                                                │
+2026-11-06 18:49:57.958 |   │ Pending:      0                                                                                │
+2026-11-06 18:49:57.958 |   │ Skipped:      0                                                                                │
+2026-11-06 18:49:57.958 |   │ Screenshots:  0                                                                                │
+2026-11-06 18:49:57.958 |   │ Video:        true                                                                             │
+2026-11-06 18:49:57.958 |   │ Duration:     8 seconds                                                                        │
+2026-11-06 18:49:57.958 |   │ Spec Ran:     catalogo-busca.cy.js                                                             │
+2026-11-06 18:49:57.958 |   └────────────────────────────────────────────────────────────────────────────────────────────────┘
+2026-11-06 18:49:57.958 | 
+2026-11-06 18:49:58.025 | 
+2026-11-06 18:49:58.025 |   (Video)
+2026-11-06 18:49:58.026 | 
+2026-11-06 18:49:58.026 |   -  Video output: /tests/cypress/videos/catalogo-busca.cy.js.mp4
+2026-11-06 18:49:58.026 | 
+2026-11-06 18:49:58.026 | 
+2026-11-06 18:49:58.026 | ────────────────────────────────────────────────────────────────────────────────────────────────────
+2026-11-06 18:49:58.026 |                                                                                                     
+2026-11-06 18:49:58.026 |   Running:  catalogo.cy.js                                                                  (3 of 5)
+2026-11-06 18:50:01.742 | 
+2026-11-06 18:50:01.742 | 
+2026-11-06 18:50:01.742 |   Funcionalidade: Catálogo de livros
+2026-11-06 18:50:02.541 |     ✓ Deve clicar no botão adicionar a cesta (757ms)
+2026-11-06 18:50:03.894 |     ✓ Deve clicar em todos os livros para adicionar à cesta (1271ms)
+2026-11-06 18:50:04.714 |     ✓ Deve clicar no primeiro livro para adicioná-lo à cesta (720ms)
+2026-11-06 18:50:05.198 |     ✓ Deve clicar no último livro para adicioná-lo à cesta (436ms)
+2026-11-06 18:50:05.656 |     ✓ Deve clicar no segundo livro para adicioná-lo à cesta (405ms)
+2026-11-06 18:50:06.149 |     ✓ Deve achar o livro Dom Casmurro e adicioná-lo à cesta (431ms)
+2026-11-06 18:50:07.001 |     ✓ Deve clicar no nome do livro e direcionar para a página do livro (767ms)
+2026-11-06 18:50:07.002 | 
+2026-11-06 18:50:07.025 | 
+2026-11-06 18:50:07.025 |   7 passing (5s)
+2026-11-06 18:50:07.025 | 
+2026-11-06 18:50:08.060 | 
+2026-11-06 18:50:08.060 |   (Results)
+2026-11-06 18:50:08.060 | 
+2026-11-06 18:50:08.061 |   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+2026-11-06 18:50:08.061 |   │ Tests:        7                                                                                │
+2026-11-06 18:50:08.061 |   │ Passing:      7                                                                                │
+2026-11-06 18:50:08.061 |   │ Failing:      0                                                                                │
+2026-11-06 18:50:08.061 |   │ Pending:      0                                                                                │
+2026-11-06 18:50:08.061 |   │ Skipped:      0                                                                                │
+2026-11-06 18:50:08.061 |   │ Screenshots:  0                                                                                │
+2026-11-06 18:50:08.061 |   │ Video:        true                                                                             │
+2026-11-06 18:50:08.061 |   │ Duration:     5 seconds                                                                        │
+2026-11-06 18:50:08.061 |   │ Spec Ran:     catalogo.cy.js                                                                   │
+2026-11-06 18:50:08.061 |   └────────────────────────────────────────────────────────────────────────────────────────────────┘
+2026-11-06 18:50:08.061 | 
+2026-11-06 18:50:08.141 | 
+2026-11-06 18:50:08.141 |   (Video)
+2026-11-06 18:50:08.142 | 
+2026-11-06 18:50:08.142 |   -  Video output: /tests/cypress/videos/catalogo.cy.js.mp4
+2026-11-06 18:50:08.142 | 
+2026-11-06 18:50:08.142 | 
+2026-11-06 18:50:08.143 | ────────────────────────────────────────────────────────────────────────────────────────────────────
+2026-11-06 18:50:08.143 |                                                                                                     
+2026-11-06 18:50:08.143 |   Running:  contato.cy.js                                                                   (4 of 5)
+2026-11-06 18:50:09.658 | 
+2026-11-06 18:50:09.658 | 
+2026-11-06 18:50:09.658 |   Funncionalidade: Contato no Hub de Leitura
+2026-11-06 18:50:11.579 |     ✓ Deve preencher o formulário de contato com sucesso (1891ms)
+2026-11-06 18:50:13.059 |     ✓ Deve validar mensagem de erro sem preencher nome (1421ms)
+2026-11-06 18:50:14.413 |     ✓ Deve validar mensagem de erro sem preencher email (1305ms)
+2026-11-06 18:50:15.995 |     ✓ Deve validar mensagem de erro sem preencher assunto (1513ms)
+2026-11-06 18:50:17.267 |     ✓ Deve validar mensagem de erro sem preencher mensagem (1197ms)
+2026-11-06 18:50:17.267 | 
+2026-11-06 18:50:17.284 | 
+2026-11-06 18:50:17.284 |   5 passing (8s)
+2026-11-06 18:50:17.284 | 
+2026-11-06 18:50:18.313 | 
+2026-11-06 18:50:18.313 |   (Results)
+2026-11-06 18:50:18.314 | 
+2026-11-06 18:50:18.314 |   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+2026-11-06 18:50:18.315 |   │ Tests:        5                                                                                │
+2026-11-06 18:50:18.315 |   │ Passing:      5                                                                                │
+2026-11-06 18:50:18.315 |   │ Failing:      0                                                                                │
+2026-11-06 18:50:18.315 |   │ Pending:      0                                                                                │
+2026-11-06 18:50:18.315 |   │ Skipped:      0                                                                                │
+2026-11-06 18:50:18.315 |   │ Screenshots:  0                                                                                │
+2026-11-06 18:50:18.315 |   │ Video:        true                                                                             │
+2026-11-06 18:50:18.315 |   │ Duration:     7 seconds                                                                        │
+2026-11-06 18:50:18.315 |   │ Spec Ran:     contato.cy.js                                                                    │
+2026-11-06 18:50:18.315 |   └────────────────────────────────────────────────────────────────────────────────────────────────┘
+2026-11-06 18:50:18.315 | 
+2026-11-06 18:50:18.377 | 
+2026-11-06 18:50:18.377 |   (Video)
+2026-11-06 18:50:18.377 | 
+2026-11-06 18:50:18.378 |   -  Video output: /tests/cypress/videos/contato.cy.js.mp4
+2026-11-06 18:50:18.378 | 
+2026-11-06 18:50:18.379 | 
+2026-11-06 18:50:18.380 | ────────────────────────────────────────────────────────────────────────────────────────────────────
+2026-11-06 18:50:18.380 |                                                                                                     
+2026-11-06 18:50:18.380 |   Running:  login.cy.js                                                                     (5 of 5)
+2026-11-06 18:50:19.960 | 
+2026-11-06 18:50:19.961 | 
+2026-11-06 18:50:19.961 |   Funcionalidade: Login no Hub de Leitura
+2026-11-06 18:50:22.312 |     ✓ Deve fazer login com sucesso (2312ms)
+2026-11-06 18:50:24.566 |     ✓ Deve fazer login com sucesso com conta Admin - usando o comando customizado (2128ms)
+2026-11-06 18:50:26.596 |     ✓ Deve fazer login com sucesso usando massa de dados e o comando customizado (1923ms)
+2026-11-06 18:50:26.596 | 
+2026-11-06 18:50:26.632 | 
+2026-11-06 18:50:26.632 |   3 passing (7s)
+2026-11-06 18:50:26.632 | 
+2026-11-06 18:50:27.695 | 
+2026-11-06 18:50:27.695 |   (Results)
+2026-11-06 18:50:27.696 | 
+2026-11-06 18:50:27.697 |   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+2026-11-06 18:50:27.697 |   │ Tests:        3                                                                                │
+2026-11-06 18:50:27.697 |   │ Passing:      3                                                                                │
+2026-11-06 18:50:27.697 |   │ Failing:      0                                                                                │
+2026-11-06 18:50:27.697 |   │ Pending:      0                                                                                │
+2026-11-06 18:50:27.697 |   │ Skipped:      0                                                                                │
+2026-11-06 18:50:27.697 |   │ Screenshots:  0                                                                                │
+2026-11-06 18:50:27.697 |   │ Video:        true                                                                             │
+2026-11-06 18:50:27.697 |   │ Duration:     6 seconds                                                                        │
+2026-11-06 18:50:27.697 |   │ Spec Ran:     login.cy.js                                                                      │
+2026-11-06 18:50:27.697 |   └────────────────────────────────────────────────────────────────────────────────────────────────┘
+2026-11-06 18:50:27.697 | 
+2026-11-06 18:50:27.703 | 
+2026-11-06 18:50:27.703 |   (Video)
+2026-11-06 18:50:27.706 | 
+2026-11-06 18:50:27.706 |   -  Video output: /tests/cypress/videos/login.cy.js.mp4
+2026-11-06 18:50:27.707 | 
+2026-11-06 18:50:27.717 | 
+2026-11-06 18:50:27.764 | ====================================================================================================
+2026-11-06 18:50:27.764 | 
+2026-11-06 18:50:27.764 |   (Run Finished)
+2026-11-06 18:50:27.767 | 
+2026-11-06 18:50:27.767 | 
+2026-11-06 18:50:27.770 |        Spec                                              Tests  Passing  Failing  Pending  Skipped  
+2026-11-06 18:50:27.770 |   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+2026-11-06 18:50:27.770 |   │ ✔  cadastro.cy.js                           00:27        6        6        -        -        - │
+2026-11-06 18:50:27.770 |   ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+2026-11-06 18:50:27.770 |   │ ✔  catalogo-busca.cy.js                     00:08        6        6        -        -        - │
+2026-11-06 18:50:27.770 |   ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+2026-11-06 18:50:27.770 |   │ ✔  catalogo.cy.js                           00:05        7        7        -        -        - │
+2026-11-06 18:50:27.770 |   ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+2026-11-06 18:50:27.770 |   │ ✔  contato.cy.js                            00:07        5        5        -        -        - │
+2026-11-06 18:50:27.770 |   ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+2026-11-06 18:50:27.770 |   │ ✔  login.cy.js                              00:06        3        3        -        -        - │
+2026-11-06 18:50:27.770 |   └────────────────────────────────────────────────────────────────────────────────────────────────┘
+2026-11-06 18:50:27.770 |     ✔  All specs passed!                        00:55       27       27        -        -        -  
+2026-11-06 18:50:27.770 | 
+2026-11-06 18:50:27.911 | 
+2026-11-06 18:50:27.911 | 🔄 Encerrando servidor graciosamente...
+2026-11-06 18:50:27.911 | ✅ Banco de dados fechado
+2026-11-06 18:50:27.911 | 👋 Servidor encerrado. Até mais!
+2026-11-06 18:50:28.013 | 
+2026-11-06 18:50:28.013 | > hub-de-leitura-teste-ui@1.0.0 report:generate
+2026-11-06 18:50:28.013 | > allure generate allure-results --clean --output allure-report
+2026-11-06 18:50:28.013 | 
+2026-11-06 18:50:29.952 | Report successfully generated to allure-report

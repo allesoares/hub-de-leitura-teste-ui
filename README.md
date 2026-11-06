@@ -79,3 +79,7 @@ CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 | `catalogo-busca.cy.js` | Verificação de títulos não vazios no catálogo; busca por 1984; busca com massa de dados importada e com `cy.fixture`; busca e validação de todos os livros da massa de dados usando `forEach` e `cy.wrap().each()`. |
 | `contato.cy.js` | Envio do formulário com sucesso; mensagens de erro ao deixar nome, e-mail, assunto ou mensagem sem preenchimento. |
 | `login.cy.js` | Login de usuário com sucesso; login de administrador com comando customizado; login usando massa de dados de `usuario.json` e comando customizado; validação da mensagem de sucesso e do redirecionamento ao dashboard. |
+
+
+Exercicio 19 - Docker
+Envidencias do log do docker em /evidencias

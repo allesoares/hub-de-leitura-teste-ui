@@ -150,6 +150,12 @@ cypress/downloads/
 # Allure: resultados e relatório HTML
 allure-results/
 allure-report/
+allure-report-simples/
 
 # Aplicação de apoio usada pelo CI e pela validação local
 .ci/
+
+# Evidências da execução Docker
+artifacts/
+/execucao-docker.txt
+/videos-docker/
