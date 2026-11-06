@@ -24,6 +24,14 @@ Depois de capturar a evidência, remova os containers para a próxima execução
 docker compose down
 ```
 
+## Bônus - Docker Hub
+
+Imagem da aplicação publicada no [Docker Hub](https://hub.docker.com/r/allesoaresdocker/hub-de-leitura-app/tags), com a tag `exercicio-20`.
+
+```powershell
+docker pull allesoaresdocker/hub-de-leitura-app:exercicio-20
+```
+
 ## Execução local
 
 Com a aplicação disponível em `http://localhost:3000`:
