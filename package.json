@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:docker": "start-server-and-test \"npm start --prefix /opt/hub-de-leitura\" http://127.0.0.1:3000/api/health test",
     "test": "npx cypress run --browser chrome",
     "cy:report": "npx cypress run --browser chrome --record",
     "report:generate": "allure generate allure-results --clean --output allure-report",
